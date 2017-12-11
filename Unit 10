@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("#animate_button").click(function(){
+$("#animate_div").animate({fontSize: "100px"}, "slow");
+});
+});
+</script>
+</head>
+<body>
+
+<div style="background:#98bf21;height:200px;width:600px;">Hello World</div>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("button").on("click",function(){//function to recognize button click
+if(this.id=='btn1')// if it was button 1
+$("p").append("abc");//then string append to paragraph
+if(this.id=="btn2")//if it was button 2
+$("ol").append("abcd");//then string was append to ol
+
+});
+});
+</script>
+</head>
+<body>
+<p>this is a paragraph.</p>
+<p>this is another paragraph.</p>
+<ol>
+<li>list item 1</li>
+<li>list item 2</li>
+<li>list item 3</li>
+</ol>
+<button id="btn1">Append text paragraph end</button>
+<button id="btn2">Append text ol end</button>
+</body>
+</html>
+
